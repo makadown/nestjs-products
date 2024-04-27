@@ -14,6 +14,8 @@ Librerias utiles utilizadas aqui
 
 - class-validator
 - class-transformer
+- uuid
+- @types/uuid
 
 ## Installation
 
