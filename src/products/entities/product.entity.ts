@@ -1,3 +1,10 @@
+export interface UpdateWithOptions {
+    name?: string;
+    description?: string;
+    price?: number;
+}
+
+
 export class Product {
 
     // public id: string,
@@ -12,5 +19,10 @@ export class Product {
         public price: number) {        
     }
 
-    // TODO: updateWith
+    updateWith(uwo: UpdateWithOptions
+    ) {
+        this.name = uwo.name ?? this.name;
+        this.description = uwo.description ?? this.description;
+        this.price = uwo.price ?? this.price;
+    }
 }
